@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VENOM | Хакерский клан</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Поле поиска в стиле командной строки -->
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Поиск..." oninput="searchText()">
+    </div>
+
+    <!-- Кнопка для открытия/закрытия меню -->
+    <div class="menu-button" onclick="toggleMenu()">☰</div>
+
+    <!-- Меню -->
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="index.html" onclick="toggleMenu()">Главная</a></li>
+            <li><a href="https://t.me/+2wBNc3FXwzFhNzk6" target="_blank" onclick="toggleMenu()">Мы в Telegram</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="developer.html">Разработчик сайта</a></li>
+            <li><a href="softs.html">Софты</a></li>
+            <li><a href="https://www.tiktok.com/@cherny_poganets?_t=ZM-8tslyvS9UJS&_r=1" target="_blank" onclick="toggleMenu()">TikTok</a></li>
+            <li><a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://chatgpt.com/&ved=2ahUKEwjr4NeV4cCLAxWMHBAIHTppEmAQFnoECAsQAQ&sqi=2&usg=AOvVaw29vbCnS_7PDD4xupasoOfg" target="_blank" onclick="toggleMenu()">ChatGPT</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <h1>VENOM</h1>
+    </header>
+
+    <section id="home">
+        <h2>Мы команда VENOM</h2>
+        <p>Мы клан, который собирает софты и сносеры. Ждём вас в нашей команде на странице "Мы в Telegram".</p>
+    </section>
+
+    <!-- Добавлен текст о приватности сайта -->
+    <section id="privacy">
+        <h2>Приватность сайта</h2>
+        <p>
+            Этот сайт анонимен и не имеет своего домена. Он имеет только IP-адрес, поэтому он уникален.  
+            Даже если кто-то захочет получить полный доступ, этого не случится,  
+            потому что сайт должен оставаться в приватности во избежание посторонних лиц на канале.
+        </p>
+    </section>
+
+    <!-- Кнопка доната -->
+    <section id="donate">
+        <h2>Поддержать проект</h2>
+        <button class="donate-button" onclick="copyCardNumber()">Донат</button>
+        <p id="donate-message" style="display: none;">Номер карты скопирован: 4323 3473 6733 8214</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
